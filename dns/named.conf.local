@@ -1,0 +1,5 @@
+// dns/named.conf.local
+zone "endrew.br" {
+    type master;
+    file "/etc/bind/db.endrew.br"; // Caminho para o arquivo de zona
+};
