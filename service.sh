@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Função para construir as imagens
 build_images() {
     case $1 in
