@@ -14,7 +14,6 @@ build_images() {
             ;;
     esac
 }
-
 # Função para iniciar os containers
 start_service() {
     case $1 in
@@ -29,7 +28,6 @@ start_service() {
             ;;
     esac
 }
-
 # Função para parar e remover os containers
 stop_service() {
     case $1 in
@@ -44,7 +42,6 @@ stop_service() {
             ;;
     esac
 }
-
 # Função principal para gerenciar as operações
 main() {
     if [[ $# -ne 2 ]]; then
@@ -72,6 +69,5 @@ main() {
             ;;
     esac
 }
-
 # Executa a função principal com os argumentos fornecidos
 main "$@"
