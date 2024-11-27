@@ -31,10 +31,10 @@ start_service() {
 stop_service() {
     case $1 in
         dns)
-            docker stop dns_container && docker rm dns_container
+            docker stop dns_container && docker rm dns_container && docker rmi dns_image
             ;;
         web)
-            docker stop web_container && docker rm web_container
+            docker stop web_container && docker rm web_container && docker rmi web_image
             ;;
         *)
             echo "Serviço desconhecido: $1. Use 'dns' ou 'web'."
